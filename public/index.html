@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Socket Basico</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+  <body>
+ 
+    <h5>Nnacy</h5>
+      
+    <div class="contenedor">
+        <h3 class="encabezado">Usuarios</h3>
+        <div id="notificaciones" class="notificaciones"></div>
+        <h1 class="encabezado">Chat</h1>
+      <div class="Chat" id="salida">
+        <div class="avisos" id="avisos">
+        </div>
+      </div>
+      <input type="text" class="usuario" id="usuario" placeholder="Usuario" required >
+      <br><br>
+      <input type="text" class="mensaje" id="mensaje" placeholder="Mensaje" required>
+      <br>
+      <button class="botonEnvio" id="enviar">Enviar</button>
+    </div>
+   
+    <script src="js/socket.io.js"></script>
+    <script src="js/logica.js" charset="utf-8"></script>
+  </body>
+</html>
